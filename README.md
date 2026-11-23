@@ -1,25 +1,29 @@
-# 🎈 Blank app template
+# Secret Emotion Detective
 
-A simple Streamlit app template for you to modify!
+A two-player English activity built with Streamlit. Student A and Student B
+receive different blanks so they can practice asking and answering questions.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Run locally
 
-### How to run it on your own machine
+Install the project dependencies and start the app:
 
-Prerequisite: install `uv` if you don't already have it.
-
+```bash
+uv sync
+uv run streamlit run streamlit_app.py
 ```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
-```
 
-1. Sync the dependencies
+## Share the app online
 
-   ```
-   $ uv sync
-   ```
+The app can be hosted for free on [Streamlit Community Cloud](https://streamlit.io/cloud).
 
-2. Run the app
+1. Push this project to a GitHub repository. Make it public if you want anyone
+   to be able to view the source code.
+2. Sign in to Streamlit Community Cloud with GitHub and select **Create app**.
+3. Choose this repository and the branch you want to deploy.
+4. Set **Main file path** to `streamlit_app.py`, then select **Deploy**.
+5. Share the URL Streamlit gives you. Anyone who can access that URL can use
+   the app; this app does not require sign-in.
 
-   ```
-   $ uv run streamlit run streamlit_app.py
-   ```
+The repository already includes its Python dependencies. If you add API keys
+or other credentials later, enter them in the app's Community Cloud secrets
+settings instead of committing them to GitHub.
